@@ -9,6 +9,7 @@
 :root {
     --cor01: #49a09d;
     --cor02: #5f2c82;
+    --cor03: #2d6462;
     --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
@@ -41,7 +42,7 @@ section#login {
 
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 510px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
@@ -68,5 +69,56 @@ div#formulario > h1 {
 }
 
 div#formulario > p {
+    font-size: 0.8em;
+}
+
+form > div.campo {
+    display: block;
+    background-color: var(--cor02);
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+
+form > div.campo > label {
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor01);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: var(--cor03);
+}
+
+form > a.botao {
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+    padding-top: 7px;
+    margin-top: 5px;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid var(--cor01);
+    border-radius: 5px;
+    color: var(--cor03);
+}
+
+form > a.botao:hover {
+    background-color: #6cd3cf;
+}
+
+form > a.botao > span {
     font-size: 0.8em;
 }
